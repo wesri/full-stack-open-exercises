@@ -1,0 +1,8 @@
+note over browser:
+user writes into the text field and clicks the submit button
+end note
+note over browser:
+add new note to the note list and rerender the note list
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: 201 created
